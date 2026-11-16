@@ -18,6 +18,13 @@ from datasketch.lsh_bloom import MinHashLSHBloom
 from datasketch.lshensemble import MinHashLSHEnsemble
 from datasketch.lshforest import MinHashLSHForest
 from datasketch.minhash import MinHash
+from datasketch.split import (
+    ClassSplitStats,
+    NearDuplicateGrouping,
+    TrainValidationSplit,
+    group_near_duplicates,
+    split_train_validation,
+)
 from datasketch.weighted_minhash import WeightedMinHash, WeightedMinHashGenerator
 
 # Alias
@@ -27,6 +34,7 @@ WeightedMinHashLSHForest = MinHashLSHForest
 __all__ = [
     "HNSW",
     "AsyncMinHashLSH",
+    "ClassSplitStats",
     "HyperLogLog",
     "HyperLogLogPlusPlus",
     "LeanMinHash",
@@ -35,11 +43,15 @@ __all__ = [
     "MinHashLSHBloom",
     "MinHashLSHEnsemble",
     "MinHashLSHForest",
+    "NearDuplicateGrouping",
+    "TrainValidationSplit",
     "WeightedMinHash",
     "WeightedMinHashGenerator",
     "WeightedMinHashLSH",
     "WeightedMinHashLSHForest",
     "bBitMinHash",
+    "group_near_duplicates",
     "sha1_hash32",
     "sha1_hash64",
+    "split_train_validation",
 ]

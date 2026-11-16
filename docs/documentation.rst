@@ -91,3 +91,19 @@ HNSW
 .. autoclass:: datasketch.HNSW
     :members:
     :special-members:
+
+Train/Validation Split
+----------------------
+
+.. autoclass:: datasketch.TrainValidationSplit
+    :members:
+
+.. autoclass:: datasketch.NearDuplicateGrouping
+    :members:
+
+.. autoclass:: datasketch.ClassSplitStats
+    :members:
+
+.. autofunction:: datasketch.group_near_duplicates
+
+.. autofunction:: datasketch.split_train_validation
